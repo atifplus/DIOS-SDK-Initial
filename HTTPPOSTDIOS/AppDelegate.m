@@ -12,6 +12,11 @@
 #import "Settings.h"
 #import <SystemConfiguration/SystemConfiguration.h>
 
+#import "DIOSSession.h"
+
+NSString * const kDIOSConsumerKey = @"<#text#>";
+NSString * const kDIOSSecretKey = @"<#text#>";
+NSString * const kDIOSURL = @"<#text#>";
 
 @implementation AppDelegate
 
@@ -20,13 +25,16 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
-
-  
 	
 	
+	[DIOSSession sharedOauthSessionWithURL:kDIOSURL consumerKey:kDIOSConsumerKey secret:kDIOSSecretKey];
 	
+//	to get the session
+//	DIOSSession *session = [DIOSSession sharedSession];
+//	to get the user
+//	session.user;
 	
-//****** Post operation
+	//****** Post operation
 	
 	NSMutableDictionary *nodeData = [NSMutableDictionary new];
 	[nodeData setValue:@"AFNetworking Test Object Test 2" forKey:@"title"];
@@ -57,7 +65,7 @@
 	}];
 	
 	
-//****** File Upload Operation
+	//****** File Upload Operation
 	
 	NSMutableDictionary *fileData = [NSMutableDictionary new];
 	NSData *imageData = UIImageJPEGRepresentation([UIImage imageNamed:@"bg.png"], 0.5);
@@ -67,7 +75,7 @@
 	[fileData setObject:@"image/png" forKey:@"mimetype"];
 	[fileData setObject:@"field_image" forKey:@"field_name"];
 	[fileData setObject:@"4" forKey:@"nid"];
-//	[node nodeAttachFile:fileData];
+	//	[node nodeAttachFile:fileData];
 	
 	
 	
@@ -95,7 +103,7 @@
 
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {
-	// Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
+	// Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
 	// If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
 }
 
