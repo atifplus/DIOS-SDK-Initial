@@ -37,24 +37,22 @@ NSString * const kDIOSURL = @"http://www.banokabazaar.com";
 	//****** Post operation
 	
 	NSMutableDictionary *nodeData = [NSMutableDictionary new];
-	[nodeData setValue:@"OAuthTesting" forKey:@"title"];
+	nodeData[@"title"] = @"OAuthTesting";
 	
-	NSDictionary *bodyValues = [NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"a test body", nil] forKeys:[NSArray arrayWithObjects:@"value", nil]];
-	NSDictionary *languageDict = [NSDictionary dictionaryWithObject:[NSArray arrayWithObject:bodyValues] forKey:@"und"];
-	[nodeData setObject:languageDict forKey:@"body"];
+	NSDictionary *bodyValues = @{@"value": @"a test body"};
+	NSDictionary *languageDict = @{@"und": @[bodyValues]};
+	nodeData[@"body"] = languageDict;
 	
-	NSDictionary *logitude = [NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"34.02127", nil] forKeys:[NSArray arrayWithObjects:@"value", nil]];
-	NSDictionary *logitudestr = [NSDictionary dictionaryWithObject:[NSArray arrayWithObject:logitude] forKey:@"und"];
-	[nodeData setObject:logitudestr forKey:@"field_longitude"];
+	NSDictionary *logitude = @{@"value": @"34.02127"};
+	NSDictionary *logitudestr = @{@"und":@[logitude]};
+	nodeData[@"field_longitude"] = logitudestr;
 	
-	NSDictionary *latitude = [NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"122.02127", nil] forKeys:[NSArray arrayWithObjects:@"value", nil]];
-	NSDictionary *loatitudestr = [NSDictionary dictionaryWithObject:[NSArray arrayWithObject:latitude] forKey:@"und"];
-	[nodeData setObject:loatitudestr forKey:@"field_latitude"];
+	NSDictionary *latitude = @{@"value": @"122.02127"};
+	NSDictionary *loatitudestr = @{@"und": @[latitude]};
+	nodeData[@"field_latitude"] = loatitudestr;
 	
-	[nodeData setObject:@"location" forKey:@"type"];
-	
-	[nodeData setObject:@"und" forKey:@"language"];
-	
+	nodeData[@"type"] = @"location";
+	nodeData[@"language"] = @"und";
 	
 	[DIOSNode nodeSave:nodeData success:^(AFHTTPRequestOperation *operation, id responseObject) {
 		NSLog(@" Response Object: %@ ", responseObject);
