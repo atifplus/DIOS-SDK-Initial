@@ -14,9 +14,9 @@
 
 #import "DIOSSession.h"
 
-NSString * const kDIOSConsumerKey = @"<#text#>";
-NSString * const kDIOSSecretKey = @"<#text#>";
-NSString * const kDIOSURL = @"<#text#>";
+NSString * const kDIOSConsumerKey = @"kS3evV8JPdHgY7FUqcmqiCh636TCig3L";
+NSString * const kDIOSSecretKey = @"Xhbk9YqvfrGyhatkie8n8kKQbNMNWULj";
+NSString * const kDIOSURL = @"http://www.banokabazaar.com";
 
 @implementation AppDelegate
 
@@ -37,7 +37,7 @@ NSString * const kDIOSURL = @"<#text#>";
 	//****** Post operation
 	
 	NSMutableDictionary *nodeData = [NSMutableDictionary new];
-	[nodeData setValue:@"AFNetworking Test Object Test 2" forKey:@"title"];
+	[nodeData setValue:@"OAuthTesting" forKey:@"title"];
 	
 	NSDictionary *bodyValues = [NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"a test body", nil] forKeys:[NSArray arrayWithObjects:@"value", nil]];
 	NSDictionary *languageDict = [NSDictionary dictionaryWithObject:[NSArray arrayWithObject:bodyValues] forKey:@"und"];
@@ -65,17 +65,17 @@ NSString * const kDIOSURL = @"<#text#>";
 	}];
 	
 	
-	//****** File Upload Operation
-	
-	NSMutableDictionary *fileData = [NSMutableDictionary new];
-	NSData *imageData = UIImageJPEGRepresentation([UIImage imageNamed:@"bg.png"], 0.5);
-	[fileData setObject:@"temp" forKey:@"name"];
-	[fileData setObject:@"temp.jpg" forKey:@"fileName"];
-	[fileData setObject:imageData forKey:@"fileData"];
-	[fileData setObject:@"image/png" forKey:@"mimetype"];
-	[fileData setObject:@"field_image" forKey:@"field_name"];
-	[fileData setObject:@"4" forKey:@"nid"];
-	//	[node nodeAttachFile:fileData];
+//	//****** File Upload Operation
+//	
+//	NSMutableDictionary *fileData = [NSMutableDictionary new];
+//	NSData *imageData = UIImageJPEGRepresentation([UIImage imageNamed:@"bg.png"], 0.5);
+//	[fileData setObject:@"temp" forKey:@"name"];
+//	[fileData setObject:@"temp.jpg" forKey:@"fileName"];
+//	[fileData setObject:imageData forKey:@"fileData"];
+//	[fileData setObject:@"image/png" forKey:@"mimetype"];
+//	[fileData setObject:@"field_image" forKey:@"field_name"];
+//	[fileData setObject:@"4" forKey:@"nid"];
+//	//	[node nodeAttachFile:fileData];
 	
 	
 	

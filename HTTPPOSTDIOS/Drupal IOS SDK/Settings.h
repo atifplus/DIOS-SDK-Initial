@@ -1,5 +1,5 @@
 #define kDiosBaseUrl @"http://www.banokabazaar.com"
-#define kDiosEndpoint @"iphoneapi"
+#define kDiosEndpoint @"oauth"
 #define kDiosBaseNode @"node.json"
 #define kDiosBaseComment @"comment"
 #define kDiosBaseUser @"user"
