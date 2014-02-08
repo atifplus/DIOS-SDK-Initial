@@ -49,7 +49,6 @@
 		10A12AF6188CD636005F5663 /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 10A12AA3188CD635005F5663 /* AFXMLRequestOperation.m */; };
 		10A12AF7188CD636005F5663 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 10A12AA5188CD635005F5663 /* UIImageView+AFNetworking.m */; };
 		10A12AF8188CD636005F5663 /* AFNetworking.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 10A12AA6188CD635005F5663 /* AFNetworking.podspec */; };
-		10A12AF9188CD636005F5663 /* AFNetworking.xcworkspace in Resources */ = {isa = PBXBuildFile; fileRef = 10A12AA7188CD635005F5663 /* AFNetworking.xcworkspace */; };
 		10A12AFA188CD636005F5663 /* CHANGES in Resources */ = {isa = PBXBuildFile; fileRef = 10A12AA8188CD635005F5663 /* CHANGES */; };
 		10A12B0F188CD636005F5663 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 10A12AD1188CD635005F5663 /* LICENSE */; };
 		10A12B10188CD636005F5663 /* Rakefile in Resources */ = {isa = PBXBuildFile; fileRef = 10A12AD2188CD635005F5663 /* Rakefile */; };
@@ -134,7 +133,6 @@
 		10A12AA4188CD635005F5663 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
 		10A12AA5188CD635005F5663 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
 		10A12AA6188CD635005F5663 /* AFNetworking.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AFNetworking.podspec; sourceTree = "<group>"; };
-		10A12AA7188CD635005F5663 /* AFNetworking.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; path = AFNetworking.xcworkspace; sourceTree = "<group>"; };
 		10A12AA8188CD635005F5663 /* CHANGES */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGES; sourceTree = "<group>"; };
 		10A12AD1188CD635005F5663 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		10A12AD2188CD635005F5663 /* Rakefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Rakefile; sourceTree = "<group>"; };
@@ -296,7 +294,6 @@
 				10A12A91188CD635005F5663 /* .travis.yml */,
 				10A12A92188CD635005F5663 /* AFNetworking */,
 				10A12AA6188CD635005F5663 /* AFNetworking.podspec */,
-				10A12AA7188CD635005F5663 /* AFNetworking.xcworkspace */,
 				10A12AA8188CD635005F5663 /* CHANGES */,
 				10A12AD1188CD635005F5663 /* LICENSE */,
 				10A12AD2188CD635005F5663 /* Rakefile */,
@@ -414,7 +411,6 @@
 				10A12997188CCB8F005F5663 /* LICENSE in Resources */,
 				10A12AFA188CD636005F5663 /* CHANGES in Resources */,
 				10A12AED188CD636005F5663 /* .gitignore in Resources */,
-				10A12AF9188CD636005F5663 /* AFNetworking.xcworkspace in Resources */,
 				10A12AEE188CD636005F5663 /* .travis.yml in Resources */,
 				10A12996188CCB8F005F5663 /* drupal-ios-sdk.podspec in Resources */,
 				10A12B10188CD636005F5663 /* Rakefile in Resources */,
